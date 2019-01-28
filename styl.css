@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+nav{
+    margin: 30px 0;
+    text-align: right;
+    max-width: 1440px;
+    margin: 30px auto;
+
+}
+nav a {
+    font-size: 1.8rem;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+    margin: 0 20px;
+
+
+}
+nav a:hover{
+    border-bottom: 2px solid black;
+
+}
+a.reservation{
+    font-size: 2.2rem;
+    border: 2px solid grey;
+    padding: 10px 30px;
+    margin-right: 50px;
+    margin-left: 80px;
+    transition: 0.2s;
+
+}
+a.reservation:hover{
+    background-color:royalblue;
+    color: white;
+    border-color: royalblue;
+}
+header{
+    background-image: url('mis.jpg');
+    height: 40vw;
+    background-size: cover;
+}
+header h1{
+    font-size: 6rem;
+    color:white;
+    text-align: center;
+    line-height: 40vw;
+    background-color: rgba(0,0,0,60%);
+
+}
+main{
+    max-width: 1440px;
+    margin: 5vh auto;
+    font-size: 0;
+
+
+    }
+main p.description  {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0 30px 50px 30px;
+    line-height: 180%;
+}
+main div.feature{
+    display: inline-block;
+    width: 33.33%;
+    background-color:bisque;
+}
+main div.image{
+    height: 200px;
+    background-color: royalblue;
+    margin: 20px 30px;
+}
+main div.image:hover{
+    background-color: rosybrown;
+}
+main h1{
+    font-size: 2rem;
+    text-align: center;
+    color:#222;
+}
+footer{
+    background-color: black;
+
+}
+footer p{
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+}
+@media(max-width:360px){
+  html{
+    display: flex;
+    flex-direction: row;
+  }
+  nav a {
+    flex-wrap: nowrap;
+      font-size: 1rem;
+      margin-bottom:5px;
+}
+a.reservation{
+  font-size: 1.5rem;
+  }
+header h1{visibility: hidden;}}
+@media(max-width:768px){
+  html{
+    display: flex;
+    flex-direction: row;
+  }
+  nav a {
+    flex-wrap: nowrap;
+      font-size: 1.5rem;
+      margin-bottom:10px;
+}
+a.reservation{
+  font-size: 1.5rem;
+  margin-top:5px;
+  }
+}
